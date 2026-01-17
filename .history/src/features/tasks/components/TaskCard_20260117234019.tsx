@@ -42,6 +42,7 @@ export default function TaskCard({ task, onToggleStatus }: Props) {
         {task.dueDate}
       </div>
 
+      {/* --- ここまで追加 --- */}
     </div>
   );
 }

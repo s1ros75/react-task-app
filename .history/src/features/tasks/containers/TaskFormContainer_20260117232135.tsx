@@ -12,7 +12,7 @@ export default function TaskFormContainer() {
     description: "",
     priority: "medium", // 初期値として medium を設定
     dueDate: "",
-    status: false
+    status: false,
   });
 
   const navigate = useNavigate();

@@ -50,6 +50,7 @@
   color: #92400e;
 }
 
+/* 優先度の共通ベーススタイル */
 .highPriority,
 .mediumPriority,
 .lowPriority,
@@ -68,6 +69,7 @@
   text-align: center;
 }
 
+/* 個別色設定（背景色と文字色） */
 .highPriority {
   background-color: #fee2e2;
   color: #991b1b;
@@ -83,11 +85,18 @@
   color: #065f46;
 }
 
-.defaultPriority {
-  background-color: #e5e7eb;
-  color: #374151;
+/* 期限日の表示も中央に寄せる */
+.dueDate {
+  text-align: center;
+  color: #6b7280;
+  font-size: 0.875rem;
 }
 
-.dueDate {
-  color: #6b7280;
+/* ステータスセレクトボックスの調整 */
+.badge {
+  /* ...既存のスタイル... */
+  width: 100px;             /* 優先度と幅を合わせると綺麗です */
+  margin: 0 auto;           /* 中央寄せ */
+  border: none;             /* セレクトボックスの枠線を消すとバッジらしくなります */
+  appearance: none;         /* デフォルトの矢印を消す（任意） */
 }

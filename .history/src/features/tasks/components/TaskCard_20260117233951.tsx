@@ -4,6 +4,8 @@ import { getPriorityClass } from "../utils/priority"; // getPriorityClass関数�
 import { getStatusLabel } from "../utils/status-label"; // getStatusLabel関数をimport
 import type { Task } from "../../../types/task";
 
+// ... (import部分は変更なし)
+
 export default function TaskCard({ task, onToggleStatus }: Props) {
 
   const handleStatusChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
@@ -42,6 +44,7 @@ export default function TaskCard({ task, onToggleStatus }: Props) {
         {task.dueDate}
       </div>
 
+      {/* --- ここまで追加 --- */}
     </div>
   );
 }
