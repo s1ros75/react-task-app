@@ -8,7 +8,7 @@ type Props = {
   id?: string;
 };
 
-export default function TaskForm({ formData, onChange, onSubmit, id }: Props) {
+export default function TaskForm({ formData, onChange, onSubmit }: Props) {
   return (
     <form onSubmit={onSubmit} className={styles.form}>
       <div className={styles.formGroup}>

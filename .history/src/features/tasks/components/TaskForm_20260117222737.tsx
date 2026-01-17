@@ -2,13 +2,10 @@ import type { TaskFormData } from "../../../types/task";
 import styles from "../styles/taskForm.module.css";
 
 type Props = {
-  formData: TaskFormData;
-  onChange: (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => void;
-  onSubmit: (e: React.FormEvent<HTMLFormElement>) => void;
-  id?: string;
+  
 };
 
-export default function TaskForm({ formData, onChange, onSubmit, id }: Props) {
+export default function TaskForm({ formData, onChange, onSubmit }: Props) {
   return (
     <form onSubmit={onSubmit} className={styles.form}>
       <div className={styles.formGroup}>
@@ -32,7 +29,7 @@ export default function TaskForm({ formData, onChange, onSubmit, id }: Props) {
         <input type="date" name="dueDate" value={formData.dueDate} onChange={onChange} required />
       </div>
       <button type="submit" className={styles.submitButton}>
-        {id ? "更新する" : "作成する"} {/* idの有無で編集か新規作成かを判定 */}
+        作成する
       </button>
     </form>
   );

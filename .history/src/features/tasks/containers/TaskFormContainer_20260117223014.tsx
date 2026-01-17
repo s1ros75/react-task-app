@@ -33,9 +33,6 @@ export default function TaskFormContainer() {
   };
 
   return (
-    <div className={styles.container}>
-      <h1>新規タスク作成</h1>
-      <TaskForm formData={formData} onChange={handleChange} onSubmit={handleSubmit} />
-    </div>
+    
   );
 }

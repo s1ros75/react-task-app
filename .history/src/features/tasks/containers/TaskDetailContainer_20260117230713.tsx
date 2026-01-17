@@ -37,8 +37,11 @@ export default function TaskDetailContainer() {
   return (
     <div className={styles.taskDetailContainer}>
       <TaskDetail task={task} />
-      <div>
-        <TaskDeleteButton id={id} /> {/* 削除ボタンコンポーネントを追加 */}
+      <div className={styles.taskDetailContainer}>
+        <TaskDetail task={task} />
+        <div>
+          <TaskDeleteButton id={id} /> {/* 削除ボタンコンポーネントを追加 */}
+        </div>
       </div>
     </div>
   );

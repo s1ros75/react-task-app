@@ -92,6 +92,8 @@
   color: #065f46;
 }
 
+/* src/features/tasks/styles/taskDetail.module.css の一部 */
+
 .taskDeleteBtn {
   background-color: #dc2626;
   color: white;

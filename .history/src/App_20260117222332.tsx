@@ -14,6 +14,7 @@ function App() {
       <Route path="/tasks/new" element={<TaskCreatePage />} /> {/* タスク作成ページへのルーティングを追加 */}
       <Route path="/tasks/:id/edit" element={<TaskEditPage />} />  {/* タスク編集ページのルーティング */}
     </Routes>
+    </Routes>
   );
 }
 

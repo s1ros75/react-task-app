@@ -3,7 +3,6 @@ import HomePage from "./pages/home";
 import TaskListPage from "./pages/tasks/taskListPage";
 import TaskDetailPage from "./pages/tasks/taskDetailPage";
 import TaskCreatePage from "./pages/tasks/taskCreatePage";
-import TaskEditPage from "./pages/tasks/taskEditPage";
 
 function App() {
   return (
@@ -13,6 +12,7 @@ function App() {
       <Route path="/tasks/:id" element={<TaskDetailPage />} /> {/* タスクの詳細ページのルーティングを追加 */}
       <Route path="/tasks/new" element={<TaskCreatePage />} /> {/* タスク作成ページへのルーティングを追加 */}
       <Route path="/tasks/:id/edit" element={<TaskEditPage />} />  {/* タスク編集ページのルーティング */}
+    </Routes>
     </Routes>
   );
 }
