@@ -3,7 +3,6 @@ import { getTasks } from "../hooks/getTasks";
 import type { Task } from "../../../types/task";
 import TaskCard from "../components/TaskCard";
 import styles from "../styles/TaskListContainer.module.css";
-import { Link } from "react-router-dom";
 
 export default function TaskListContainer() {
   const [tasks, setTasks] = useState<Task[]>([]);
